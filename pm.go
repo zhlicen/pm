@@ -32,8 +32,8 @@ func ParseResult(result string) (record MonitorRecord, err error) {
 		}
 		var record MonitorRecord
 		record.CpuUsage = matchResult[0][1]
-		record.VmSize = matchResult[0][2]
-		record.VmRss = matchResult[0][3]
+		record.VmRss = matchResult[0][2]
+		record.VmSize = matchResult[0][3]
 		log.Printf("Parse result: cpu=%s, vmsize=%s, vmrss=%s\n",
 			record.CpuUsage, record.VmSize, record.VmRss)
 		return record, nil
