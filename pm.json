@@ -1,0 +1,18 @@
+{
+    "global": {
+        "over_ssh": true,
+        "processes": ["sutra"],
+        "loop_every_minutes": 1
+    },
+    "ssh": {
+        "ip": "10.204.29.73",
+        "port": "22",
+        "username": "test",
+        "password": "QQww1234"
+    },
+    "influxdb": {
+        "address": "http://10.204.30.45:8086/",
+        "db": "sutra_test",
+        "measurement": "sutra_cpu_memory"
+    }
+}
